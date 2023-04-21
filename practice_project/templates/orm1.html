@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <h1>Student</h1>
+   <table border="1 px">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Roll</th>
+        <th>City</th>
+        <th>Marks</th>
+        <th>Passdate</th>
+    </tr>
+    
+    {% for stu in student %}
+    <tr>
+        <td>{{stu.id}}</td>
+        <td>{{stu.name}}</td>
+        <td>{{stu.roll}}</td>
+        <td>{{stu.city}}</td>
+        <td>{{stu.marks}}</td>
+        <td>{{stu.passdate}}</td>
+    </tr>
+    
+    {% endfor %}
+
+   </table>
+
+
+   <h1>Teacher</h1>
+   <table border="1 px">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Emp No</th>
+            <th>City</th>
+            <th>Salary</th>
+            <th>Join Date</th>
+        </tr>
+        
+        {% for te in teacher %}
+        <tr>
+            <td>{{te.id}}</td>
+            <td>{{te.name}}</td>
+            <td>{{te.empnum}}</td>
+            <td>{{te.city}}</td>
+            <td>{{te.salary}}</td>
+            <td>{{te.join_date}}</td>
+        </tr>
+        
+        {% endfor %}
+       </table>
+       <h1>ORM</h1>
+    <table>
+        {% for d in data %}
+        <tr>
+            <td>{{d.id}}</td>
+            <td>{{d.name}}</td>
+        </tr>
+        
+        {% endfor %}
+    </table>
+
+      <h1>AND OR operator</h1>
+      <h1>Student</h1>
+   <table border="1 px">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Roll</th>
+        <th>City</th>
+        <th>Marks</th>
+        <th>Passdate</th>
+    </tr>
+    
+    {% for stu in student_data %}
+    <tr>
+        <td>{{stu.id}}</td>
+        <td>{{stu.name}}</td>
+        <td>{{stu.roll}}</td>
+        <td>{{stu.city}}</td>
+        <td>{{stu.marks}}</td>
+        <td>{{stu.passdate}}</td>
+    </tr>
+    
+    {% endfor %}
+    </table>
+</body>
+</html>
